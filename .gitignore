@@ -1,6 +1,11 @@
 *.class
+.DS_Store
+*.out
 
 # Package Files #
 *.jar
 *.war
 *.ear
+
+# python stuff #
+*.pyc
