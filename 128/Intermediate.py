@@ -27,6 +27,9 @@ def pavement(m):
     num_paved = 0
     paved_rows, paved_cols = set(), set()
     paved_roads = {"r" : paved_rows, "c" : paved_cols}
+    need_paved_r, need_paved_c = dict(), dict()
+    npr, npc = need_paved_r, need_paved_c
+    need_paved = {"r" : npr, "c" : npc}
     N = len(m)
     while num_paved < N :
         h = [] # (priority, row|col, index)
