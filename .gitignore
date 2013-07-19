@@ -2,6 +2,10 @@
 .DS_Store
 *.out
 
+# safety #
+pbcopy
+pbpaste
+
 # Package Files #
 *.jar
 *.war
