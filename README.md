@@ -1,9 +1,13 @@
 dailyprogrammer
 ===============
 
-My solutions to http://www.reddit.com/r/dailyprogrammer/ in various languages
+My solutions to http://www.reddit.com/r/dailyprogrammer/ in various languages.
 
-Currently deciding on folder structure as I want to do these in more than one language (treating this as ways to learn new languages).
+Current languages:
+	Java, C++, Python 2, Clojure
+	
+format.py prepends four spaces to each line of an input file to fit /r/dailyprogrammer's comment styles
+
 
 ===============
 Clone instructions
