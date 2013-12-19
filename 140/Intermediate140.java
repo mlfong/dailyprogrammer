@@ -10,18 +10,18 @@ public class Intermediate140
 		for(int i = 0 ; i < M; ++i)
 		{
 		  String line = s.nextLine();
-      int row = Integer.parseInt(line.substring(0,1));
-      String[] adj = line.substring(5).split(" ");
-      for(String ss : adj)
-        matrix[row][Integer.parseInt(ss)] = 1;
+		  String[] rows = line.substring(0, line.indexOf(" ->")).split(" ");
+      String[] adj = line.substring(line.indexOf(">")+2).split(" ");
+      for(String rr : rows) {
+        int row = Integer.parseInt(rr);
+        for(String ss : adj)
+          matrix[row][Integer.parseInt(ss)] = 1;
+      }
 		}
 		for(int i = 0 ; i < N; ++i) {
 		  for(int j = 0 ; j < N ; ++j)
 		    System.out.print(matrix[i][j]);
 		  if(i != N-1) System.out.println();
 		}
-		
-		
-		
 	}
 }
